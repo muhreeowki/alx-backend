@@ -51,6 +51,6 @@ class Server:
         dataset = self.dataset()
         try:
             index = index_range(page, page_size)
-            return dataset[index[0] : index[1]]
+            return dataset[index[0]:index[1]]
         except IndexError:
             return []
